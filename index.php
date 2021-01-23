@@ -31,7 +31,6 @@
 <body>
 	<?php
 	session_start();
-	$_SESSION['status'];
 	$hasil = $_SESSION['status'];
 
 	echo "<script>swal('$hasil', '', 'warning');</script>";
