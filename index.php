@@ -31,6 +31,9 @@
 <body>
 	<?php
 	session_start();
+	if(!isset($_SESSION['status'])){
+		$_SESSION['status'] = "Selamat datang";
+	}
 	$hasil = $_SESSION['status'];
 
 	echo "<script>swal('$hasil', '', 'warning');</script>";
